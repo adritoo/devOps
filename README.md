@@ -1,4 +1,4 @@
 # devOps
 Final Project from devOps class.
 
-[![Build Status](https://travis-ci.com/adritoo/lab3.svg?branch=master)](https://travis-ci.com/adritoo/devOps)
+[![Build Status](https://travis-ci.org/adritoo/devOps.svg?branch=master)](https://travis-ci.org/adritoo/devOps)
