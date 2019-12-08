@@ -1,8 +1,19 @@
+[![Build Status](https://travis-ci.org/adritoo/devOps.svg?branch=master)](https://travis-ci.org/adritoo/devOps)
+
 # devOps
 Final Project from devOps class.
 
-[![Build Status](https://travis-ci.org/adritoo/devOps.svg?branch=master)](https://travis-ci.org/adritoo/devOps)
+## Installation
 
+```bash
+$ npm install 
+```
+
+## Usage
+
+```bash
+$ npm start
+```
 
 ## Author
 
