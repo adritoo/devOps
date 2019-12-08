@@ -1,4 +1,3 @@
-"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var express = require("express");
 var metrics_1 = require("./metrics");

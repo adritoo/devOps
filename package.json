@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jshint ./tsproject/index.js",
+    "test": "jshint ./tsproject/server.js",
     "start": "./node_modules/.bin/ts-node src/server.ts",
     "build": "./node_modules/.bin/tsc -p tsconfig.json",
     "dev": "./node_modules/.bin/nodemon"
