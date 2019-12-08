@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jshint index.js",
     "start": "./node_modules/.bin/ts-node src/server.ts",
     "build": "./node_modules/.bin/tsc -p tsconfig.json",
     "dev": "./node_modules/.bin/nodemon"
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@types/express": "^4.17.2",
     "@types/node": "^12.12.12",
+    "jshint": "^2.10.3",
     "typescript": "^3.7.2"
   }
 }
