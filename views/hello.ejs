@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Node Js TP2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  </head>
+
+  <body class="container">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Hello <%= name %></h1>
+      <button class="btn btn-success" id="show-metrics">
+        Bring the metrics
+      </button>
+      <div id="metrics"></div>
+    </div>
+    <p>Welcome to our humble application</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('#show-metrics').click((e) => {
+            e.preventDefault();
+            $.getJSON("/metrics.json", {}, (data) => {
+                const content = data.map(d => {
+                    return 'timestamp: ' + d.timestamp + ', value: ' + d.value + '';
+                })
+                $('#metrics').append(content.join("\n"));
+            });
+        })
+</script>
+  </body>
+</html>
